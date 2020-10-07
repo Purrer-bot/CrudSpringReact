@@ -32,7 +32,6 @@ public class UserController {
 
     @GetMapping("/test")
     ResponseEntity<String> transaction(){
-        service.makeTransaction();
         return new ResponseEntity<>("HI \n", HttpStatus.OK);
     }
 
